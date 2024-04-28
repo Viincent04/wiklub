@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiklub</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .max-w-1920 {
+            max-width: 1920px;
+        }
+
+        .header-height {
+            height: 50px;
+        }
+
+        .text-align-left {
+            text-align: left;
+        }
+    </style>
 </head>
+
 <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
-    <header class="bg-blue-900 text-white text-center p-4">
-        <h1 class="text-2xl">Wirtschaft- und Industrieklub Osnabrück Fröderverein</h1>
+    <header class="bg-blue-900 text-white p-2 w-full header-height flex items-center">
+        <div class="max-w-1920 mx-auto flex items-center justify-start">
+            <img src="header.png" alt="Header Bild" class="w-24 h-24">
+            <h1 class="text-xl ml-6">Wirtschaft- und Industrieklub Osnabrück Förderverein</h1>
+        </div>
     </header>
 
-    <div class="container mx-auto text-center flex-grow">
-        <img src="wiklubbild.jpg" class="w-full">
-        <div style="margin-top: 1000px;">
-            <p class="text-lg font-semibold">das aaetguahtgauonWE43otgjasnjtgopuntg uwtguwnt nwqnrn qwt3ent nt n nn nIQN i</p>
-        </div>
-    </div>
+    <main class="max-w-1920 mx-auto flex-grow text-left">
+        <img src="wiklubbild.jpg" alt="Wiklub Bild" class="w-full object-cover" style="height: 1080px;">
 
-    <footer class="bg-gray-200 text-center p-4 w-full z-10">
-        <p>
-            <a href="impressum.html" class="text-blue-600">Impressum</a> |
-            <a href="datenshutz.html" class="text-blue-600">Datenschutz</a> |
-            <a href="vereinssatzung.html" class="text-blue-600">Vereinssatzung</a>
-            &copy; Wirtschaft- und Industrie-Klub Osnabrücke e.V.
+        <div class="mt-4 text-align-left">
+            <p class="text-4xl font-semibold">Wer sind wir</p>
+            <p class="text-4xl font-semibold">
+                awtatataw<br>
+                w taatta<br>
+                aaezhhz<br>
+                ahhedg
+            </p>
+        </div>
+    </main>
+
+    <footer class="bg-blue-500 text-center p-4 fixed bottom-0 w-full z-20 max-w-1920 mx-auto">
+        <p class="whitespace-nowrap text-white flex justify-center items-center">
+            <a href="impressum.html" class="mr-4 text-white hover:underline">Impressum</a>
+            <a href="datenschutz.html" class="mr-4 text-white hover:underline">Datenschutzhinweise</a>
+            <a href="vereinssatzung.html" class="mr-10 text-white hover:underline">Vereinssatzung</a>
+            <span class="ml-10">&copy; Wirtschaft- und Industrie-Klub Osnabrück e.V.</span>
         </p>
     </footer>
-
-    <div class="bg-gray-300 text-center p-4 fixed bottom-0 w-full z-20">
-        <p>Das ist mein Sache diesdas</p>
-    </div>
 </body>
+
 </html>
